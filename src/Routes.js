@@ -32,9 +32,15 @@ export const router = createBrowserRouter([
         element: <Blog />,
       },
       {
+        path: 'quiz',
+        element: <Quiz />,
+      },
+      {
         path: 'quiz/:quizId',
         element: <Quiz />,
-        // loader: () => fetch('https://api.itbook.store/1.0/new'),
+        loader: async ({params}) => {
+          return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+        },
       },
       {
         // path: 'book/:id',
