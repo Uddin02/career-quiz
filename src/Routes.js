@@ -16,10 +16,12 @@ export const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
       },
       {
         path: 'home',
         element: <Home />,
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
       },
       {
         path: 'about',
@@ -30,7 +32,7 @@ export const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: 'quizes',
+        path: 'quiz/:quizId',
         element: <Quiz />,
         // loader: () => fetch('https://api.itbook.store/1.0/new'),
       },

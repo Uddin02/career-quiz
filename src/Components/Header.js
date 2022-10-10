@@ -33,7 +33,7 @@ const Header = () => {
               <span className='text-sky-400'>Career</span> Quiz
             </span>
           </Link>
-          <ul className='flex items-center hidden space-x-8 lg:flex'>
+          <ul className='md:flex items-center hidden space-x-8 lg:flex'>
             <li>
               <NavLink
                 to='/home'
@@ -51,16 +51,16 @@ const Header = () => {
 
             <li>
               <NavLink
-                to='/quizes'
-                aria-label='quizes'
-                title='quizes'
+                to='/quiz'
+                aria-label='quiz'
+                title='quiz'
                 className={({ isActive }) =>
                   isActive
                     ? 'font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400'
                     : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                 }
               >
-                Quizes
+                Quiz
               </NavLink>
             </li>
 
@@ -192,12 +192,12 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          to='/quizes'
-                          aria-label='quizes'
-                          title='quizes'
+                          to='/quiz'
+                          aria-label='quiz'
+                          title='quiz'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Quizes
+                          Quiz
                         </Link>
                       </li>
 
