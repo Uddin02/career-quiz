@@ -12,9 +12,7 @@ const Home = () => {
       <div className="m-10 lg:flex">
         <img className="rounded-md" src={Images} alt="" />
         <p className="text-justify md:pl-2 text-2xl text-slate-500">
-          The internet connects everyone nowadays and web development is a huge
-          part of our society. If you want to be well-known throughout the world
-          then you should probably develop your own website or a web page.
+          The internet connects everyone nowadays and web development is a huge part of our society. If you want to be well-known throughout the world then you should probably develop your own website or a web page.
         </p>
       </div>
       <h1 className='text-center font-bold text-sky-400 text-lg mb-10'>Please Select a Topic For The Quiz</h1>
