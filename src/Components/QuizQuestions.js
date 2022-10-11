@@ -10,16 +10,18 @@ const QuizQuestions = ({ques}) => {
     const htmlStr = question;
     const newStr = htmlStr.replace(/(<([^>]+)>)/ig, '');
 
-    const viewAnswer = (correctAnswer) =>{
-        toast.success(correctAnswer);
+    const viewAnswer = () =>{
+        toast(correctAnswer,{ position: "top-center",theme: "light",});
+
     }
-    
+
     return (
         <div className='bg-slate-200 text-xl mt-10 p-10 rounded-md'>
             <div className='flex justify-between items-center'>
                 <p className='font-bold'>Q: {newStr}</p>
-                <EyeIcon className="h-6 w-6 text-gray-500 cursor-pointer" onClick={() => viewAnswer(correctAnswer)}/>
+                <EyeIcon className="h-6 w-6 text-gray-500 cursor-pointer" onClick={() => viewAnswer()}/>
             </div>
+
             <div className="flex justify-center mt-8">
                 <AnswerCard
                 key={id}
@@ -28,6 +30,7 @@ const QuizQuestions = ({ques}) => {
                 ></AnswerCard>
             </div>
        </div>
+       
     );
 };
 

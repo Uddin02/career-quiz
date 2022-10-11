@@ -16,7 +16,7 @@ const Quiz = () => {
             <p className="mb-2 text-xl text-gray-800 text-center font-bold leading-none sm:text-2xl">
             {name}
             </p>
-            <p className="mb-2 text-gray-600 text-center leading-none sm:text-2xl">
+            <p className="mb-2 text-gray-6 00 text-center leading-none sm:text-2xl">
             <small>Total Questions in this topic: {total}</small>
             </p>
       </div>

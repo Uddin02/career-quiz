@@ -1,5 +1,5 @@
 import React from 'react';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Answer = (props) => {
@@ -8,26 +8,9 @@ const Answer = (props) => {
     // console.log(correctAnswer)
  
     const correct = () => toast.success('Your answer is Correct',{
-        position: "top-center",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+        position: "top-center",theme: "light",});
    
-        const wrong = () => toast.error('Oops! You select a wrong answer',{
-        position: "top-center",
-        autoClose: 4000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
+        const wrong = () => toast.error('Oops! Your answer is incorrect',{ position: "top-center",theme: "light",});
   
     const answerHandler = answer => {
         // console.log(answer)
@@ -50,7 +33,6 @@ const Answer = (props) => {
             <label className=" text-white text-lg ml-4">
                 {answer}
             </label>
-            <ToastContainer></ToastContainer>
         </div>
     );
 };

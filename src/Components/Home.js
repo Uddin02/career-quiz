@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="m-10 md:flex ">
+      <div className="m-10 lg:flex">
         <img className="rounded-md" src={Images} alt="" />
         <p className="text-justify md:pl-2 text-2xl text-slate-500">
           The internet connects everyone nowadays and web development is a huge
@@ -17,7 +17,7 @@ const Home = () => {
           then you should probably develop your own website or a web page.
         </p>
       </div>
-
+      <h1 className='text-center font-bold text-sky-400 text-lg mb-10'>Please Select a Topic For The Quiz</h1>
       <div className='m-10 grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8'>
         {quizDatas.map((quizData) => (
           <QuizData key={quizData.id} quizData={quizData}></QuizData>
