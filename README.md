@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+- In this project we display the three core topics of web development which are loaded by the custom api.
+- Moreover we check the quiz answers by a react toaster either it correct or not.
+- And this project is fully resposive for small, medium & large devices.
+
 ## Available Scripts
 
 In the project directory, you can run:
