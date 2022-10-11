@@ -51,21 +51,6 @@ const Header = () => {
 
             <li>
               <NavLink
-                to='/quiz'
-                aria-label='quiz'
-                title='quiz'
-                className={({ isActive }) =>
-                  isActive
-                    ? 'font-medium tracking-wide text-blue-400 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                    : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                }
-              >
-                Quiz
-              </NavLink>
-            </li>
-
-            <li>
-              <NavLink
                 to='/statistics'
                 aria-label='statistics'
                 title='statistics'
@@ -188,16 +173,6 @@ const Header = () => {
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
                           Home
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to='/quiz'
-                          aria-label='quiz'
-                          title='quiz'
-                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                        >
-                          Quiz
                         </Link>
                       </li>
 
