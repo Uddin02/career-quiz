@@ -9,7 +9,7 @@ const QuizQuestions = ({ques}) => {
     const {id, question, options, correctAnswer} = ques;
     const htmlStr = question;
     const newStr = htmlStr.replace(/(<([^>]+)>)/ig, '');
-
+    
     const viewAnswer = () =>{
         toast(correctAnswer,{ position: "top-center",theme: "light",});
 
